@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+
+        <!--Buat Style Halaman Web-->
+        <style>
+            /*Buat style body*/
+             body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+            }
+    
+            /*Buat style header*/
+            .header {
+                padding: 30px;
+                text-align:center;
+                background-color: rgb(235, 63, 212);
+                color: white;
+                font-size: 28;
+            }
+
+            /*Buat Style elemen ul*/
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow:hidden;
+                background-color: limegreen;
+            }
+            /*Buat Style elemen li */
+            li {
+               float: left; 
+            }
+            /*Buat Style elemen a pada elemen li*/ 
+            li a {
+                display: block;
+                color: rgb(3, 3, 3);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }     
+            /*Style Element a:hover pada elemen li*/
+            li a:hover {
+                background-color:white
+            }     
+
+            /*Style element footer (kaki)*/
+            footer {
+                text-align: center;
+                padding: 2px;
+                background-color: darkcyan;
+                color: white;
+            }
+
+            /*Style element img (image/gambar)*/
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding: 20px;
+            }
+
+             /*Style tabel*/
+             .tabelfu {
+                margin-left: auto;
+                margin-right: auto;
+                border-collapse: collapse;
+            }
+            .tabelfu th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: center;
+                background-color: lightseagreen;
+                color: white;
+            }  
+            .tabelfu th, .tabelfu td  {
+                border: 1px solid #ddd;
+                padding: 8px;
+                
+            }         
+
+        </style>
+
+</head>
+<body>
+    <!--buat header(kepala)-->
+    <div class="header">
+        <h2>
+            HOTEL ANAYA LABUAN BAJO
+        </h2>
+    </div>
+    
+    <!--buat menubar (navbar)-->
+    <div>
+        <ul>
+            <li> <a href="index.html"> HALAMAN HOME </a> </li>
+            <li> <a href="fk.html"> HALAMAN FASILTAS KAMAR </a> </li>
+            <li> <a href="fu.html"> HALAMAN FASILITAS UMUM </a> </li>
+        </ul>
+    </div>
+
+    <!--buat halaman isi-->
+    <div>
+        <h2 style="text-align: center;"> 
+            SELAMAT DATANG DI HALAMAN FASILITAS UMUM 
+        </h2>
+    </div>
+
+    <!--Buat Tabel Fasilitas umum -->
+    <div>
+        <h3 style="text-align: center;"> DAFTAR FASILITAS UMUN </h3>
+        <!--buat tabel-->
+        <table class="tabelfu">
+            <!--bagian kepala tabel-->
+            <thead>
+                <tr>
+                    <th> No </th>
+                    <th> Gambar </th>
+                    <th> Nama Fasilitas Umum </th>
+                    <th> Deskripsi </th>
+                </tr>
+            </thead>
+            <!--bagian isi tabel-->
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td> <img src="fu/gambarKL1.jpg" alt="gambar1"> </td>
+                    <td> Kolam Renang 1 </td>
+                    <td> Luas 6 x 5 meter  </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> <img src="fu/gambarKL2.jpeg" alt="gambar2"> </td>
+                    <td> Kolam Renang 2 </td>
+                    <td> Luas 10 x 10 m dan berada di lantai 1 </td>
+                </tr>
+                <tr> 
+                    <td> 3 </td>
+                    <td> <img src="fu/PrivateVilla_GardenPool_Day.jpg" alt="gambar3"> </td>
+                    <td> Tempat Olahraga Takrow </td>
+                    <td> Berada di Lantai 2 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--buat halaman kaki(footer)-->
+    <div>
+        <footer>
+            <p> Dibuat oleh: Software Enginnering SMKN 1 Kuwus</p>
+            <a href="mailto:smknegeri1kuwus@gmail.com"> 
+                smknegeri1kuwus@gmail.com  
+            </a>
+        </footer>
+    </div> 
+
+</body>
+</html>

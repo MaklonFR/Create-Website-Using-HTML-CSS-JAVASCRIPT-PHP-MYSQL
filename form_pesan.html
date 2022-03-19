@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+
+        <!--Buat Style Halaman Web-->
+        <style>
+            /*Buat style body*/
+             body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+            }
+    
+            /*Buat style header*/
+            .header {
+                padding: 30px;
+                text-align:center;
+                background-color: rgb(235, 63, 72);
+                color: white;
+                font-size: 28;
+            }
+
+            /*Buat Style elemen ul*/
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow:hidden;
+                background-color: limegreen;
+            }
+            /*Buat Style elemen li */
+            li {
+               float: left; 
+            }
+            /*Buat Style elemen a pada elemen li*/ 
+            li a {
+                display: block;
+                color: rgb(3, 3, 3);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }     
+            /*Style Element a:hover pada elemen li*/
+            li a:hover {
+                background-color:white
+            }     
+
+            /*Style element footer (kaki)*/
+            footer {
+                text-align: center;
+                padding: 2px;
+                background-color: darkcyan;
+                color: white;
+            }
+
+            /*Style element img (image/gambar)*/
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding: 20px;
+            }
+
+            /*style elemen div form pesan*/
+            div.form_pesan {
+                margin: 100px 200px;
+                padding: 20px;
+                background-color: darkseagreen;
+                border-radius: 10px;
+            }
+
+            /*style input dan select*/
+            input[type=text], input[type=date], select {
+             width: 100%;
+             padding: 12px 20px;
+             margin-left: auto;
+             margin-right: auto;
+             display: inline-block;
+             border: 1px solid #ccc;
+             border-radius: 4px;
+             box-sizing: border-box;
+            }
+
+        </style>
+
+</head>
+<body>
+    <!--buat header(kepala)-->
+    <div class="header">
+        <h2>
+            HOTEL ANAYA LABUAN BAJO
+        </h2>
+    </div>
+    
+    <!--buat menubar (navbar)-->
+    <div>
+        <ul>
+            <li> <a href="index.html"> HALAMAN HOME </a> </li>
+            <li> <a href="fk.html"> HALAMAN FASILTAS KAMAR </a> </li>
+            <li> <a href="fu.html"> HALAMAN FASILITAS UMUM </a> </li>
+        </ul>
+    </div>
+
+    <!--buat halaman isi-->
+    <div>
+        <h2 style="text-align: center;"> 
+            SILAHKAN PESAN KAMAR SEKARANG
+        </h2>
+    </div>
+
+    <!--Buat Form Pemesanan-->
+    <div class="form_pesan">
+        <form action="" method="post">
+            <!--buat textinput nama pemesan-->
+            <label for="np"> Nama Pemesan: </label>
+            <input type="text" name="np" id="np">
+         
+            <!--buat textinput nama tamu-->
+            <label for="nt"> Nama Tamu: </label>
+            <input type="text" name="nt" id="nt">
+
+            <!--buat tanggal checkin-->
+            <label for="tc"> Tanggal Ceckin: </label>
+            <input type="date" name="tc" id="tc">
+
+            <!--buat tanggal checkout-->
+            <label for="tco"> Tanggal Checkout: </label>
+            <input type="date" name="tco" id="tco">
+
+            <!--buat tipe kamar-->
+            <label for="tk"> Pilih Tipe Kamar </label>
+            <select name="tk" id="tk">
+                <option value="Premium"> Premium </option> 
+                <option value="Ekonomi"> Ekonomi </option>            
+            </select>
+
+            <!--buat jumlah kamar-->
+            <label for="jk"> Pilih jumlah Kamar </label>
+            <select name="jk" id="jk">
+                <option value="1"> 1 </option> 
+                <option value="2"> 2 </option>            
+            </select>
+        </form>
+    </div>
+
+
+    <!--buat halaman kaki(footer)-->
+    <div>
+        <footer>
+            <p> Dibuat oleh: Software Enginnering SMKN 1 Kuwus</p>
+            <a href="mailto:smknegeri1kuwus@gmail.com"> 
+                smknegeri1kuwus@gmail.com  
+            </a>
+        </footer>
+    </div> 
+
+</body>
+</html>
