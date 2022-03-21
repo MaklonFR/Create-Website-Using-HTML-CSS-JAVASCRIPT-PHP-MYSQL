@@ -85,6 +85,31 @@
              box-sizing: border-box;
             }
 
+            /*Style tombol button*/
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            /*style button:hover*/
+            .button:hover {
+                background-color: white;
+                color: black;
+            }
+            /*Style Warna Button*/
+            .button_biru {
+                background-color:dodgerblue;
+            }
+            .button_orange {
+                background-color:orange;
+            }
+
         </style>
 
 </head>
@@ -145,6 +170,16 @@
                 <option value="2"> 2 </option>            
             </select>
         </form>
+
+        <!--Buat Tombol Button Kirim Pesan-->
+        <button type="button" class="button button_biru">
+            Kirim Pesan
+        </button>
+        <!--Buat Tombol Button Batal-->
+        <button type="button" class="button button_orange">
+            Batal Pesan
+        </button>
+        
     </div>
 
 
